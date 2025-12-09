@@ -156,14 +156,7 @@ a {
     background: #f0f0f0;
     color: #0084fa;
 }
-.header__menu {
-    margin-left: auto;
-    background: transparent;
-    border: 1px solid #222;
-    color: #fff;
-    border-radius: 8px;
-    padding: 8px 10px;
-}
+
 @media (min-width: 600px) {
     .header__nav {
         width: auto;
@@ -193,17 +186,7 @@ a {
     z-index: 0; /* derrière le contenu */
 }
 
-/* Sections à fond image fixe */
-.hero--bg-fixed,
-.features--bg-fixed,
-.cta--bg-fixed {
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-    position: relative;
-    color: #fff;
-}
-
+/* Sections positioning */
 .hero__inner,
 .features > .container,
 .cta__inner {
@@ -270,16 +253,6 @@ a {
     font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem);
     margin-bottom: 12px;
 }
-.section-title-white {
-    color: #ffffff;
-    font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem);
-    margin-bottom: 12px;
-}
-.section-title-dark {
-    color: #000000;
-    font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem);
-    margin-bottom: 12px;
-}
 .section-intro {
     color: var(--muted);
     max-width: 820px;
@@ -324,15 +297,6 @@ a {
 .feature-card p {
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     line-height: 1.6;
-}
-.features__note {
-    margin-top: 18px;
-    color: #000000;
-}
-.feature-icon svg {
-    width: 28px;
-    height: 28px;
-    fill: var(--primary);
 }
 
 @media (min-width: 720px) {
@@ -393,17 +357,7 @@ a {
     font-weight: 700;
     margin: 0;
 }
-.gratuit {
-    position: relative;
-    background-color: #ffffff;
-    padding-top: 5px;
-    text-align: center;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    background-position-x: center;
-    background-position-y: bottom;
-}
+
 @media (min-width: 600px) {
     .panier {
         min-height: 350px;
@@ -441,11 +395,6 @@ a {
     display: grid;
     gap: clamp(20px, 4vw, 28px);
     grid-template-columns: 1fr;
-}
-.footer__brand {
-    font-weight: 900;
-    color: #ffffff;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 .footer__cols {
     display: grid;
