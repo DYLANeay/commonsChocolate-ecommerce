@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact - Le paradis du chocolat</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container header__row">
+                <a href="../index.html" class="header__brand"
+                    >Le paradis du chocolat</a
+                >
+                <nav class="header__nav">
+                    <a href="../index.html" aria-label="Accueil">accueil</a>
+                    <a href="produits.html" aria-label="Produits">produits</a>
+                    <a href="panier.html" aria-label="Panier">panier</a>
+                    <a href="contact.html" aria-label="Contact">contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title center">Contactez-nous</h2>
+                <p class="section-intro center">
+                    Une question ? Une suggestion ? N'hésitez pas à nous
+                    contacter via ce formulaire.
+                </p>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name"
+                                >Nom complet
+                                <span class="required">*</span></label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                minlength="2"
+                                maxlength="100"
+                                placeholder="Votre nom"
+                            />
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"
+                                >Email <span class="required">*</span></label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                maxlength="100"
+                                placeholder="votre.email@exemple.com"
+                            />
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject"
+                                >Sujet <span class="required">*</span></label
+                            >
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                required
+                                minlength="3"
+                                maxlength="150"
+                                placeholder="Objet de votre message"
+                            />
+                            <span
+                                class="error-message"
+                                id="subject-error"
+                            ></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"
+                                >Message <span class="required">*</span></label
+                            >
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                minlength="10"
+                                maxlength="1000"
+                                rows="6"
+                                placeholder="Écrivez votre message ici..."
+                            ></textarea>
+                            <span
+                                class="error-message"
+                                id="message-error"
+                            ></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button
+                                type="submit"
+                                class="btn btn--primary btn--lg"
+                            >
+                                Envoyer le message
+                            </button>
+                        </div>
+
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer__grid">
+                <nav class="footer__cols">
+                    <div class="footer__col">
+                        <h4>Société</h4>
+                        <ul>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Offres d'emploi</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Communautés</h4>
+                        <ul>
+                            <li><a href="#">Espace artistes</a></li>
+                            <li><a href="#">Développeurs</a></li>
+                            <li><a href="#">Campagnes publicitaires</a></li>
+                            <li><a href="#">Fournisseurs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Liens utiles</h4>
+                        <ul>
+                            <li><a href="#">Assistance</a></li>
+                            <li><a href="#">Lecteur Web</a></li>
+                            <li><a href="#">Appli mobile gratuite</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Abonnements</h4>
+                        <ul>
+                            <li><a href="#">Premium Personnel</a></li>
+                            <li><a href="#">Premium Famille</a></li>
+                            <li><a href="#">Premium Étudiants</a></li>
+                            <li><a href="#">Free</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
