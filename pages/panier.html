@@ -16,16 +16,53 @@
                 <nav class="header__nav">
                     <a href="../index.html" aria-label="Accueil">accueil</a>
                     <a href="produits.html" aria-label="Produits">produits</a>
-                    <a href="panier.html" aria-label="Panier">panier</a>
+                    <a href="panier.html" aria-label="Panier"
+                        >panier <span id="cart-count" class="cart-count"></span
+                    ></a>
                     <a href="contact.html" aria-label="Contact">contact</a>
                 </nav>
             </div>
         </header>
 
-        <section class="panier">
+        <section class="cart-section">
             <div class="container">
                 <h2 class="section-title center">Votre Panier</h2>
-                <p>Votre panier est vide pour le moment.</p>
+
+                <div id="cart-empty" class="cart-empty">
+                    <p>Votre panier est vide.</p>
+                    <a href="produits.html" class="btn btn--primary"
+                        >Découvrir nos chocolats</a
+                    >
+                </div>
+
+                <div
+                    id="cart-content"
+                    class="cart-content"
+                    style="display: none"
+                >
+                    <div id="cart-items" class="cart-items"></div>
+
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span id="cart-total-price">0.00 CHF</span>
+                        </div>
+                        <div class="cart-actions">
+                            <button
+                                id="clear-cart"
+                                class="btn btn--outline-danger"
+                            >
+                                Vider le panier
+                            </button>
+                            <button
+                                id="order-btn"
+                                class="btn btn--primary btn--lg"
+                            >
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -68,5 +105,6 @@
                 </nav>
             </div>
         </footer>
+        <script src="../js/script.js"></script>
     </body>
 </html>

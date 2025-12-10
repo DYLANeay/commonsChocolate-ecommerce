@@ -16,7 +16,9 @@
                 <nav class="header__nav">
                     <a href="../index.html" aria-label="Accueil">accueil</a>
                     <a href="produits.html" aria-label="Produits">produits</a>
-                    <a href="panier.html" aria-label="Panier">panier</a>
+                    <a href="panier.html" aria-label="Panier"
+                        >panier <span id="cart-count" class="cart-count"></span
+                    ></a>
                     <a href="contact.html" aria-label="Contact">contact</a>
                 </nav>
             </div>
@@ -26,37 +28,77 @@
             <div class="container">
                 <h2 class="section-title center">Nos Chocolats</h2>
                 <div class="features__grid">
-                    <article class="feature-card center">
+                    <article
+                        class="feature-card center"
+                        data-id="think"
+                        data-name="Think"
+                        data-price="12.90"
+                        data-img="/img/chocolat_violet.jpg"
+                    >
                         <img
                             src="../img/chocolat_violet.jpg"
                             alt="Tablette de chocolat violette"
                         />
                         <h3>Think</h3>
                         <p>Un chocolat pour vous aider à réfléchir</p>
+                        <p class="product-price">12.90 CHF</p>
+                        <button class="btn btn--primary add-to-cart">
+                            Ajouter au panier
+                        </button>
                     </article>
-                    <article class="feature-card center">
+                    <article
+                        class="feature-card center"
+                        data-id="calm"
+                        data-name="Calm"
+                        data-price="12.90"
+                        data-img="/img/chocolat_bleu.jpg"
+                    >
                         <img
                             src="../img/chocolat_bleu.jpg"
                             alt="Tablette de chocolat bleu"
                         />
                         <h3>Calm</h3>
-                        <p>Un chocolat pour se détendre</p>
+                        <p>Un chocolat pour se détendre et rêver un peu</p>
+                        <p class="product-price">12.90 CHF</p>
+                        <button class="btn btn--primary add-to-cart">
+                            Ajouter au panier
+                        </button>
                     </article>
-                    <article class="feature-card center">
+                    <article
+                        class="feature-card center"
+                        data-id="defend"
+                        data-name="Defend"
+                        data-price="12.90"
+                        data-img="/img/chocolat_vert.jpg"
+                    >
                         <img
                             src="../img/chocolat_vert.jpg"
                             alt="Tablette de chocolat vert"
                         />
                         <h3>Defend</h3>
                         <p>Un chocolat pour défendre ses idées</p>
+                        <p class="product-price">12.90 CHF</p>
+                        <button class="btn btn--primary add-to-cart">
+                            Ajouter au panier
+                        </button>
                     </article>
-                    <article class="feature-card center">
+                    <article
+                        class="feature-card center"
+                        data-id="happiness"
+                        data-name="Happiness"
+                        data-price="12.90"
+                        data-img="/img/chocolat_rouge.jpg"
+                    >
                         <img
                             src="../img/chocolat_rouge.jpg"
                             alt="Tablette de chocolat rouge"
                         />
                         <h3>Happiness</h3>
                         <p>Un chocolat pour vous donner le sourire</p>
+                        <p class="product-price">12.90 CHF</p>
+                        <button class="btn btn--primary add-to-cart">
+                            Ajouter au panier
+                        </button>
                     </article>
                 </div>
             </div>
@@ -101,5 +143,6 @@
                 </nav>
             </div>
         </footer>
+        <script src="../js/script.js"></script>
     </body>
 </html>
