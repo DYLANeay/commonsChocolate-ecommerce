@@ -4,59 +4,52 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Le paradis du chocolat</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  
+
   <body>
-    <!-- Header -->
     <header class="site-header">
       <div class="container header__row">
-        <div class="header__brand">Le paradis du chocolat</div>
+        <a href="index.html" class="header__brand">Le paradis du chocolat</a>
         <nav class="header__nav">
-          <a href="#" aria-label="Premium">accueil</a>
-          <a href="#" aria-label="Assistance">produits</a>
-          <a href="#" aria-label="Télécharger">panier</a>
-          <a href="#" aria-label="Télécharger">contact</a>
+          <a href="index.html" aria-label="Accueil">accueil</a>
+          <a href="pages/produits.html" aria-label="Produits">produits</a>
+          <a href="pages/panier.html" aria-label="Panier">panier</a>
+          <a href="pages/contact.html" aria-label="Contact">contact</a>
         </nav>
       </div>
     </header>
 
-    <!-- bienvenue dans le paradis du chocolat -->
-    <section class="hero hero--bg-fixed">
+    <section id="hero" class="hero hero--bg-fixed">
       <img src="img/chocolat_paysage.jpg" alt="image de chocolat format paysage" class="header-bg"/>
       <div class="hero__overlay"></div>
       <div class="container hero__inner">
         <h1 class="hero__title">Bienvenue dans le paradis du chocolat</h1>
         <p style="text-shadow: 2px 2px 5px rgb(0, 132, 255);">Le e-commerce des gourmands</p>
-        <a href="#" class="btn btn--xl btn--primary hero__cta">découvrir</a>
+        <a href="pages/produits.html" class="btn btn--xl btn--primary hero__cta">découvrir</a>
       </div>
     </section>
 
-    <!-- nos chocolats -->
-    <section class="features features--bg-fixed">
+    <section id="produits" class="features features--bg-fixed">
       <div class="features__overlay"></div>
       <div class="container">
         <h2 class="section-title center">Nos Chocolats</h2>
         <div class="features__grid">
-
           <article class="feature-card center">
             <img src="img/chocolat_violet.jpg" alt="Tablette de chocolat violette" class="feature-img">
             <h3>Think</h3>
             <p>Un chocolat pour vous aider à réfléchir</p>
           </article>
-
           <article class="feature-card center">
             <img src="img/chocolat_bleu.jpg" alt="Tablette de chocolat bleu" class="feature-img">
             <h3>Calm</h3>
             <p>Un chocolat pour se détendre</p>
           </article>
-
           <article class="feature-card center">
             <img src="img/chocolat_vert.jpg" alt="Tablette de chocolat vert" class="feature-img">
             <h3>Defend</h3>
             <p>Un chocolat pour défendre ses idées</p>
           </article>
-
           <article class="feature-card center">
             <img src="img/chocolat_rouge.jpg" alt="Tablette de chocolat violette" class="feature-img">
             <h3>Happiness</h3>
@@ -66,14 +59,11 @@
       </div>
     </section>
 
-        <!-- panier -->
-    <section class="panier">
-        <p>Panier</p>
-      </div>
+    <section id="panier" class="panier">
+      <p>Panier</p>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
+    <footer id="contact" class="site-footer">
       <div class="container footer__grid">
         <div class="footer__brand"></div>
         <nav class="footer__cols">
@@ -81,7 +71,7 @@
             <h4>Société</h4>
             <ul>
               <li><a href="#">À propos</a></li>
-              <li><a href="#">Offres d’emploi</a></li>
+              <li><a href="#">Offres d'emploi</a></li>
             </ul>
           </div>
           <div class="footer__col">
@@ -112,5 +102,5 @@
           </div>
         </nav>
     </footer>
-    <script src="script.js"></script>
+  </body>
 </html>
