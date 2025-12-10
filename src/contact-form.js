@@ -3,7 +3,7 @@ import { EMAILJS_CONFIG } from "./emailjs-config.js";
 
 emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
 
-document.addEventListener("DOMContentLoaded", function () {
+function initContactForm() {
   const contactForm = document.getElementById("contactForm");
   if (!contactForm) return;
 
@@ -146,4 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
       submitBtn.textContent = originalText;
     }
   });
-});
+}
+
+export { initContactForm };
