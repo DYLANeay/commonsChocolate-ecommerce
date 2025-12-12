@@ -27,6 +27,23 @@
         <section class="features">
             <div class="container">
                 <h2 class="section-title center">Nos Chocolats</h2>
+
+                <!-- Price Filter -->
+                <div class="product-filters">
+                    <div class="filter-group">
+                        <label for="price-filter">Filtrer par prix:</label>
+                        <select id="price-filter" class="price-filter-select">
+                            <option value="all">Tous les prix</option>
+                            <option value="0-13">Moins de 13 CHF</option>
+                            <option value="13-14">13 - 14 CHF</option>
+                            <option value="14-99">14 CHF et plus</option>
+                        </select>
+                    </div>
+                    <div class="filter-results">
+                        <span id="products-count">11 produits</span>
+                    </div>
+                </div>
+
                 <div class="features__grid">
                     <article
                         class="feature-card center"
