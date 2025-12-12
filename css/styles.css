@@ -362,6 +362,9 @@ a {
 .feature-card img {
     border-radius: var(--radius);
     margin-bottom: 16px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .feature-card:hover {
@@ -436,8 +439,8 @@ a {
     line-height: 1.6;
 }
 
-/* panier */
-.panier {
+/* Panier */
+.Panier {
     position: relative;
     background-color: #ffffff;
     padding: clamp(48px, 8vw, 80px) clamp(24px, 5vw, 40px);
@@ -446,7 +449,7 @@ a {
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-.panier p {
+.Panier p {
     font-size: clamp(1.4rem, 3vw, 2rem);
     color: #000;
     font-weight: 700;
@@ -464,12 +467,12 @@ a {
     background-position-y: bottom;
 }
 @media (min-width: 600px) {
-    .panier {
+    .Panier {
         min-height: 350px;
     }
 }
 @media (min-width: 900px) {
-    .panier {
+    .Panier {
         min-height: 400px;
     }
 }
