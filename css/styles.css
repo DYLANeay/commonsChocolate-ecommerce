@@ -836,6 +836,41 @@ a {
     min-height: 120px;
 }
 
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.password-toggle:hover {
+    opacity: 1;
+}
+
+.password-toggle .eye-icon {
+    display: inline-block;
+}
+
+.password-toggle.active {
+    opacity: 1;
+}
+
 .error-message {
     display: block;
     color: var(--danger);
