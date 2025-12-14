@@ -33,8 +33,21 @@
             <div class="container">
                 <h2 class="section-title center">Nos Chocolats</h2>
 
-                <!-- Price Filter -->
+                <!-- Filters -->
                 <div class="product-filters">
+                    <div class="filter-group">
+                        <label for="category-filter"
+                            >Filtrer par catégorie:</label
+                        >
+                        <select
+                            id="category-filter"
+                            class="category-filter-select"
+                        >
+                            <option value="all">Toutes les catégories</option>
+                            <option value="tablette">Tablettes</option>
+                            <option value="coffret">Coffrets</option>
+                        </select>
+                    </div>
                     <div class="filter-group">
                         <label for="price-filter">Filtrer par prix:</label>
                         <select id="price-filter" class="price-filter-select">
@@ -45,7 +58,7 @@
                         </select>
                     </div>
                     <div class="filter-results">
-                        <span id="products-count">11 produits</span>
+                        <span id="products-count">13 produits</span>
                     </div>
                 </div>
 
@@ -55,6 +68,7 @@
                         data-id="think"
                         data-name="Think"
                         data-price="12.90"
+                        data-category="tablette"
                         data-img="/img/chocolat_violet.jpg"
                         data-description="Un chocolat pour vous aider à réfléchir"
                     >
@@ -89,6 +103,7 @@
                         data-id="calm"
                         data-name="Calm"
                         data-price="12.90"
+                        data-category="tablette"
                         data-img="/img/chocolat_bleu.jpg"
                         data-description="Un chocolat pour se détendre et rêver un peu"
                     >
@@ -124,6 +139,7 @@
                         data-id="defend"
                         data-name="Defend"
                         data-price="12.90"
+                        data-category="tablette"
                         data-img="/img/chocolat_vert.jpg"
                         data-description="Un chocolat pour défendre ses idées"
                     >
@@ -159,6 +175,7 @@
                         data-id="happiness"
                         data-name="Happiness"
                         data-price="12.90"
+                        data-category="tablette"
                         data-img="/img/chocolat_rouge.jpg"
                         data-description="Un chocolat pour vous donner le sourire"
                     >
@@ -193,6 +210,7 @@
                         data-id="faena-studio"
                         data-name="Faena Studio"
                         data-price="14.90"
+                        data-category="tablette"
                         data-img="/img/Chocolates Commons - FAENA Studio.jpg"
                         data-description="Collection exclusive de chocolats raffinés"
                     >
@@ -228,6 +246,7 @@
                         data-id="faena-collection"
                         data-name="Faena Collection"
                         data-price="14.90"
+                        data-category="tablette"
                         data-img="/img/Chocolates Commons - FAENA Studio copie.jpg"
                         data-description="Assortiment premium de chocolats artisanaux"
                     >
@@ -263,6 +282,7 @@
                         data-id="faena-premium"
                         data-name="Faena Premium"
                         data-price="14.90"
+                        data-category="tablette"
                         data-img="/img/Chocolates Commons - FAENA Studio copie 2.jpg"
                         data-description="Chocolats d'exception pour moments uniques"
                     >
@@ -299,6 +319,7 @@
                         data-id="upbeat-classic"
                         data-name="Upbeat Classic"
                         data-price="13.90"
+                        data-category="tablette"
                         data-img="/img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead.jpg"
                         data-description="Un chocolat énergisant pour votre journée"
                     >
@@ -334,6 +355,7 @@
                         data-id="upbeat-delight"
                         data-name="Upbeat Delight"
                         data-price="13.90"
+                        data-category="tablette"
                         data-img="/img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead copie.jpg"
                         data-description="Douceur revigorante pour l'esprit"
                     >
@@ -368,14 +390,15 @@
                         data-id="upbeat-energy"
                         data-name="Upbeat Energy"
                         data-price="13.90"
-                        data-img="/img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead copie 2.jpg"
+                        data-category="tablette"
+                        data-img="/img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead.jpg"
                         data-description="Boost d'énergie chocolatée"
                     >
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <img
-                                        src="../img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead copie 2.jpg"
+                                        src="../img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead.jpg"
                                         alt="Chocolates Commons Upbeat Energy"
                                     />
                                     <span class="flip-hint"
@@ -402,6 +425,7 @@
                         data-id="upbeat-bliss"
                         data-name="Upbeat Bliss"
                         data-price="13.90"
+                        data-category="tablette"
                         data-img="/img/Chocolates Commons' Upbeat Packaging System Inspires A Sweet Indulgence Ahead copie 3.jpg"
                         data-description="Extase chocolatée revigorante"
                     >
@@ -431,6 +455,78 @@
                             Ajouter au Panier
                         </button>
                     </article>
+                    <article
+                        class="feature-card center"
+                        data-id="coffret-prestige"
+                        data-name="Coffret Prestige"
+                        data-price="29.90"
+                        data-category="coffret"
+                        data-img="/img/collection1.jpg"
+                        data-description="Coffret cadeau avec assortiment de chocolats fins"
+                    >
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../img/collection1.jpg"
+                                        alt="Coffret Prestige"
+                                    />
+                                    <span class="flip-hint"
+                                        >Cliquez pour voir plus</span
+                                    >
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4>Coffret Prestige</h4>
+                                    <p class="flip-description">
+                                        Coffret cadeau avec assortiment de
+                                        chocolats fins
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Coffret Prestige</h3>
+                        <p>Coffret cadeau avec assortiment de chocolats fins</p>
+                        <p class="product-price">29.90 CHF</p>
+                        <button class="btn btn--primary add-to-cart">
+                            Ajouter au Panier
+                        </button>
+                    </article>
+                    <article
+                        class="feature-card center"
+                        data-id="coffret-decouverte"
+                        data-name="Coffret Découverte"
+                        data-price="24.90"
+                        data-category="coffret"
+                        data-img="/img/collection2.jpg"
+                        data-description="Coffret découverte de nos meilleures créations"
+                    >
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img
+                                        src="../img/collection2.jpg"
+                                        alt="Coffret Découverte"
+                                    />
+                                    <span class="flip-hint"
+                                        >Cliquez pour voir plus</span
+                                    >
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4>Coffret Découverte</h4>
+                                    <p class="flip-description">
+                                        Coffret découverte de nos meilleures
+                                        créations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Coffret Découverte</h3>
+                        <p>Coffret découverte de nos meilleures créations</p>
+                        <p class="product-price">24.90 CHF</p>
+                        <button class="btn btn--primary add-to-cart">
+                            Ajouter au Panier
+                        </button>
+                    </article>
                 </div>
             </div>
         </section>
@@ -442,33 +538,26 @@
                         <h4>Société</h4>
                         <ul>
                             <li><a href="#">À propos</a></li>
-                            <li><a href="#">Offres d'emploi</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__col">
-                        <h4>Communautés</h4>
-                        <ul>
-                            <li><a href="#">Espace artistes</a></li>
-                            <li><a href="#">Développeurs</a></li>
-                            <li><a href="#">Campagnes publicitaires</a></li>
-                            <li><a href="#">Fournisseurs</a></li>
+                            <li><a href="#">Nos valeurs</a></li>
+                            <li><a href="#">Carrières</a></li>
                         </ul>
                     </div>
                     <div class="footer__col">
                         <h4>Liens utiles</h4>
                         <ul>
-                            <li><a href="#">Assistance</a></li>
-                            <li><a href="#">Lecteur Web</a></li>
-                            <li><a href="#">Appli mobile gratuite</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="#">Confidentialité</a></li>
                         </ul>
                     </div>
                     <div class="footer__col">
-                        <h4>Abonnements</h4>
+                        <h4>Réseaux sociaux</h4>
                         <ul>
-                            <li><a href="#">Premium Personnel</a></li>
-                            <li><a href="#">Premium Famille</a></li>
-                            <li><a href="#">Premium Étudiants</a></li>
-                            <li><a href="#">Free</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
                         </ul>
                     </div>
                 </nav>
