@@ -491,6 +491,22 @@ a {
     color: #fff;
 }
 
+.flip-card-back .flip-info {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.flip-card-back .flip-info:last-child {
+    margin-bottom: 0;
+}
+
+.flip-card-back .flip-info strong {
+    color: #fff;
+}
+
 .flip-hint {
     position: absolute;
     bottom: 8px;
@@ -1257,6 +1273,18 @@ a {
 
 .cart-popup__actions .btn {
     width: 100%;
+}
+
+.cart-popup__continue {
+    background: var(--bg);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+.cart-popup__continue:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
 }
 
 @media (min-width: 480px) {
